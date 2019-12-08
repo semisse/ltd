@@ -11,9 +11,7 @@
 }
 
 .skills .chart {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 0 auto;
 }
 
 .skills .chart .skill {
@@ -23,6 +21,7 @@
 .skills .chart .skill .circle {
     height: calc(var(--base-unit) * 20);
     width: calc(var(--base-unit) * 20);
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +31,6 @@
 }
 
 .skills .chart .skill .circle .percentage {
-    text-align: center;
     font-style: italic;
     font-size: 200%;
 }
@@ -41,20 +39,13 @@
     font-size: 150%;
     color: var(--white);
     text-align: center;
+    margin: 0 auto;
 }
 
 @media (min-width: 40rem) {
     .skills .chart {
-        flex-direction: row;
-    }
-    .skills .chart {
-        flex-basis: 50%;
-    }
-    .skills .chart .skill {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: red;
+        flex-grow: .5;
     }
+    
 }
