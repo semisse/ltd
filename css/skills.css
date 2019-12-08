@@ -1,5 +1,9 @@
 /* Skills */
 
+.skills {
+    margin: 0 auto;
+}
+
 .skills h2 {
     text-align: center;
 }
@@ -12,6 +16,7 @@
 
 .skills .chart {
     margin: 0 auto;
+    margin-bottom: calc(var(--base-unit) * 5);
 }
 
 .skills .chart .skill {
@@ -42,10 +47,23 @@
     margin: 0 auto;
 }
 
+.skills .card {
+    margin: 0 auto;
+}
+
 @media (min-width: 40rem) {
     .skills .chart {
         display: flex;
-        flex-grow: .5;
+        flex-wrap: wrap;
     }
-    
+
+    .skills .chart .skill{
+        min-width: 50%;
+    }
+}
+
+@media (min-width: 45rem) {
+    .skills .chart .skill{
+        min-width: 25%;
+    }
 }
