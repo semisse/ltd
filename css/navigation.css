@@ -6,10 +6,6 @@
     margin-bottom: calc(var(--base-unit) * 5);
 }
 
-.logo {
-    z-index: 200;
-}
-
 .menu {
     height: calc(var(--base-unit) * 5);
     width: calc(var(--base-unit) * 5);
@@ -29,7 +25,7 @@
     display: none;
 }
 
-.menu input:checked~.navigation, .menu input:checked~.close {
+.menu input:checked~.navigation {
     display: block;
     transform: translate(0, 0);
     transition: transform 1s cubic-bezier(0.77,0.2,0.05,1.0);
@@ -64,34 +60,6 @@
     margin-bottom: 0;
 }
 
-.close {
-    height: 100%;
-    width: 100%;
-    display: none;
-    z-index: 200;
-    position: relative;
-}
-
-.close a {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.close a>span {
-    height: 1px;
-    width: 100%;
-    display: block;
-    background-color: var(--black);
-    transform: rotate(45deg);
-}
-
-.close a>span:last-child {
-    transform: rotate(-45deg);
-}
-
 .navigation {
     position: fixed;
     top: 0;
@@ -102,7 +70,6 @@
     z-index: 100;
     display: none;
     text-align: right;
-    padding-top: calc(var(--base-unit) * 10);
     transform: translate(-100%, 0);
     transition: all 1s cubic-bezier(0.77,0.2,0.05,1.0);
 }
@@ -126,6 +93,31 @@
     color: var(--black);
 }
 
+.close {
+    height: calc(var(--base-unit) * 5);
+    width: calc(var(--base-unit) * 5);
+}
+
+.close a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.close a>span {
+    height: 1px;
+    width: 100%;
+    display: block;
+    background-color: var(--black);
+    transform: rotate(45deg);
+}
+
+.close a>span:last-child {
+    transform: rotate(-45deg);
+}
+
 .social {
     display: flex;
     justify-content: flex-end;
@@ -141,4 +133,23 @@
 
 .social img:hover {
     filter: invert(0.5)
+}
+
+@media (min-width: 40rem) {
+
+    .navigation li {
+        font-size: 500%;
+        text-align: center;
+    }
+    .navigation li {
+        font-size: 500%;
+        text-align: center;
+    }
+    .social {
+        justify-content: center;
+    }
+
+    .navigation p {
+        text-align: center;
+    }
 }
