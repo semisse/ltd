@@ -7,8 +7,8 @@
     --nazare: #63C0AD;
     --base-unit: 8px;
     --font-default: freight-big-pro, serif;
-
     font-size: 1.2rem;
+    letter-spacing: .02rem;
 }
 
 body {
@@ -21,6 +21,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
     font-style: italic;
     color: var(--nazare);
+    text-align: center;
 }
 
 h1 {
@@ -34,10 +35,12 @@ h1 {
 
 h2 {
     font-size: 300%;
+    color: var(--cream);
 }
 
 h3 {
-    font-size: 200%;
+    font-size: 150%;
+    color: var(--cream);
 }
 
 p {
@@ -61,7 +64,8 @@ img {
 }
 
 section {
-    margin: calc(var(--base-unit) * 5);
+    margin: calc(var(--base-unit) * 5) 0;
+    padding: 0 calc(var(--base-unit) * 2.5);
 }
 
 .wrapper {
@@ -69,75 +73,3 @@ section {
     margin: 0 auto;
     padding: 0 calc(var(--base-unit) * 2);
 }
-
-
-/* Header */
-.header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.header img {
-    margin-top: calc(var(--base-unit) * (-5));
-    max-width: 80%;
-}
-
-.header .card {
-    margin-top: calc(var(--base-unit) * (-2));
-}
-
-
-/* Cards */
-
-.card {
-    background-color: var(--white);
-    padding: calc(var(--base-unit) * 3);
-    margin: calc(var(--base-unit) * 3);
-    display: flex;
-    align-items: center;;
-}
-
-.card p {
-    color: var(--black);
-    margin: 0;
-}
-
-.card p:first-child::first-letter {
-    font-size: 5.5em;
-    color: var(--nazare);
-    float: left;
-    line-height: 60px;
-    padding-top: 16px;
-    padding-right: 8px;
-}
-
-/* Projects */
-
-.projects h2 {
-    text-align: center;
-    color: var(--cream)
-}
-
-.projects h3 {
-    font-size: 150%;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 125%;
-}
-
-.project {
-    max-width: 100%;
-    margin: calc(var(--base-unit) * 10) 0;
-    
-}
-
-.project img {
-    margin-bottom: calc(var(--base-unit) * 5);
-}
-
-
-.project p {
-    color: var(--white);
-}
-

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
@@ -9,11 +9,16 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://use.typekit.net/hik5gdi.css">
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper" role="main">
         <div class="topbar">
             <div class="logo">
                 <a href="#">
@@ -71,23 +76,27 @@
             </div>
         </div>
 
-        <div class="header">
-            <h1>design & develop through stories</h1>
-            <img src="img/sam.png" srcset="img/sam.png 1x, img/sam@2x.png 2x" alt="picture of samuel">
+        <section class="header">
+            <div class="welcome">
+                <h1>design & develop through stories</h1>
+                <img src="img/sam.png" srcset="img/sam.png 1x, img/sam@2x.png 2x" alt="picture of samuel">
+            </div>
             <div class="card">
                 <p>My name is Samuel Fialho and I’m a UX Engineer based in Lisbon and working fulltime now at Nuxeo. I
                     love
                     to design and code, though most of my time is spent developing the frontend of Nuxeo products.</p>
             </div>
-        </div>
+        </section>
 
         <section class="projects" id="projects">
             <h2>Projects</h2>
 
             <div class="project">
-                <img src="img/projects/cmnazare01.png"
-                    srcset="img/projects/cmnazare01.png 1x, img/projects/cmnazare01@2x.png 2x"
-                    alt="redesign da Câmara Municipal da Nazaré">
+                <div class="image">
+                    <img src="img/projects/cmnazare01.png"
+                        srcset="img/projects/cmnazare01.png 1x, img/projects/cmnazare01@2x.png 2x"
+                        alt="redesign da Câmara Municipal da Nazaré">
+                </div>
                 <h3>Quando o desafio é desenhar para milhões de pessoas</h3>
                 <p>Num momento em que a Nazaré teve um pico de mediatização devido à maior onda do mundo alguma vez
                     surfada por um homem, era tempo de responder aos milhões de visitas mundiais que queriam saber mais
@@ -97,8 +106,10 @@
             </div>
 
             <div class="project">
-                <img src="img/projects/cibv.png" srcset="img/projects/cibv.png 1x, img/projects/cibv@2x.png 2x"
-                    alt="aplicação do Centro de Interpretação da Batalha do Vimeiro">
+                <div class="image">
+                    <img src="img/projects/cibv.png" srcset="img/projects/cibv.png 1x, img/projects/cibv@2x.png 2x"
+                        alt="aplicação do Centro de Interpretação da Batalha do Vimeiro">
+                </div>
                 <h3>Quando o desafio é desenhar para milhões de pessoas</h3>
                 <p>Num momento em que a Nazaré teve um pico de mediatização devido à maior onda do mundo alguma vez
                     surfada por um homem, era tempo de responder aos milhões de visitas mundiais que queriam saber mais
@@ -108,9 +119,11 @@
             </div>
 
             <div class="project">
-                <img src="img/projects/cmnazare01.png"
-                    srcset="img/projects/cmnazare01.png 1x, img/projects/cmnazare01@2x.png 2x"
-                    alt="redesign da Câmara Municipal da Nazaré">
+                <div class="image">
+                    <img src="img/projects/atlantico.png"
+                        srcset="img/projects/atlantico.png 1x, img/projects/atlantico@2x.png 2x"
+                        alt="redesign da Câmara Municipal da Nazaré">
+                </div>
                 <h3>Quando o desafio é desenhar para milhões de pessoas</h3>
                 <p>Num momento em que a Nazaré teve um pico de mediatização devido à maior onda do mundo alguma vez
                     surfada por um homem, era tempo de responder aos milhões de visitas mundiais que queriam saber mais
@@ -120,6 +133,88 @@
             </div>
         </section>
 
+        <section class="skills" id="skills">
+            <h2>Skills</h2>
+            <h3>Welcome to the most honest skill chart you will find on the entire web</h3>
+            <div class="chart">
+                <div class="skill">
+                    <div class="circle">
+                        <div class="percentage">1%</div>
+                    </div>
+                    <h4>UX&UI</h4>
+                </div>
+                <div class="skill">
+                    <div class="circle">
+                        <div class="percentage">1%</div>
+                    </div>
+                    <h4>HTML</h4>
+                </div>
+                <div class="skill">
+                    <div class="circle">
+                        <div class="percentage">1%</div>
+                    </div>
+                    <h4>CSS</h4>
+                </div>
+                <div class="skill">
+                    <div class="circle">
+                        <div class="percentage">1%</div>
+                    </div>
+                    <h4>Javascript</h4>
+                </div>
+            </div>
+            <div class="card">
+                <p>This is not a bug. Even though I have more than 10 years of experience building products and services
+                    on the web, the more I realize I know nothing. And this is what is so cool about our industry.</p>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="experience">
+                <h2>Experience</h2>
+                <dl>
+                    <dt>January 2019 — Present</dt>
+                    <dd>Frontend Developer at Nuxeo</dd>
+
+                    <dt>January 2016 — December 2018</dt>
+                    <dd>Freelancing as designer and frontend developer</dd>
+
+                    <dt>May 2013 — December 2015</dt>
+                    <dd>Co-founded Digital Impulse, worked as Creative Director</dd>
+
+                    <dt>October 2009 — April 2013</dt>
+                    <dd>Freelancing as a frontend developer</dd>
+                </dl>
+                <dl>
+                    <dt>September 2019 — Present</dt>
+                    <dd>Post-Graduation in Digital Experience Design</dd>
+
+                    <dt>September 2019 — November 2019</dt>
+                    <dd>React Nano Degree (Udacity)</dd>
+
+                    <dt>January 2016</dt>
+                    <dd>Social Media Marketing Strategy (Edit)</dd>
+
+                    <dt>September 2004 — September 2019</dt>
+                    <dd>Graduation in Journalism (ESCS)</dd>
+                </dl>
+            </div>
+
+            <div class="clients">
+                <h2>Clients</h2>
+                <ul>
+                    <li><img src="img/clients/standard-bank.svg" alt="standard bank logo"></li>
+                    <li><img src="img/clients/banco-atlantico.svg" alt="banco atlantico logo"></li>
+                    <li><img src="img/clients/cmnazare.svg" alt="câmara municipal da nazaré logo"></li>
+                    <li><img src="img/clients/paladin.svg" alt="paladin logo"></li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <img src="img/logo.svg" alt="assinatura de samuel fialho">
+            <p>©2019 Samuel Fialho. All Rights Reserved.<br>
+            Thanks for scrolling, clicking, and reading!</p>
+        </footer>
     </div>
 </body>
 

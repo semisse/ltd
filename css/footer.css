@@ -1,0 +1,16 @@
+/* Footer */
+footer {
+    margin: calc(var(--base-unit) * 5) 0;
+    text-align: center
+}
+
+footer img {
+    margin: calc(var(--base-unit) * 5) 0;
+}
+
+footer p {
+    font-size: 70%;
+    line-height: 150%;
+    font-style: italic;
+    color: white;
+}

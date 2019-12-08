@@ -1,0 +1,60 @@
+/* Skills */
+
+.skills h2 {
+    text-align: center;
+}
+
+.skills h3 {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--white);
+}
+
+.skills .chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills .chart .skill {
+    margin: calc(var(--base-unit) * 2) 0;
+}
+
+.skills .chart .skill .circle {
+    height: calc(var(--base-unit) * 20);
+    width: calc(var(--base-unit) * 20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--nazare);
+    border-radius: 50%;
+    margin-bottom: calc(var(--base-unit) * 2);
+}
+
+.skills .chart .skill .circle .percentage {
+    text-align: center;
+    font-style: italic;
+    font-size: 200%;
+}
+
+.skills .chart .skill h4 {
+    font-size: 150%;
+    color: var(--white);
+    text-align: center;
+}
+
+@media (min-width: 40rem) {
+    .skills .chart {
+        flex-direction: row;
+    }
+    .skills .chart {
+        flex-basis: 50%;
+    }
+    .skills .chart .skill {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: red;
+    }
+}
