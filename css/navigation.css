@@ -26,9 +26,7 @@
 }
 
 .menu input:checked~.navigation {
-    display: block;
-    transform: translate(0, 0);
-    transition: transform 1s cubic-bezier(0.77,0.2,0.05,1.0);
+    transform: translateY(0%);
 }
 
 .burger {
@@ -62,16 +60,19 @@
 
 .navigation {
     position: fixed;
+    height: 100vh;
+    width: 100vw;
     top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
-    background-color: var(--white);
+    transform: translateY(-200% );
     z-index: 100;
-    display: none;
+    background-color: var(--white);
     text-align: right;
-    transform: translate(-100%, 0);
-    transition: all 1s cubic-bezier(0.77,0.2,0.05,1.0);
+    transition: transform .4s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+.navigation ul {
+    padding: 0;
 }
 
 .navigation li {
