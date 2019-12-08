@@ -60,3 +60,19 @@
         max-width: calc(var(--base-unit) * 50);
     }
 }
+
+@media (min-width: 44rem) {
+    h1 {
+        font-size: 700%;
+    }
+}
+
+@media (min-width: 70rem) {
+    h1 {
+        font-size: 1000%;
+    }
+
+    .header img {
+        margin-top: calc(var(--base-unit) * (-5));
+    }
+}
