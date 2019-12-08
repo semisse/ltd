@@ -29,3 +29,24 @@
 .project p {
     color: var(--white);
 }
+
+@media (min-width: 40rem) {
+
+    .project {
+        display: flex;
+    }
+
+    .image, .description {
+        flex: 50%
+    }
+
+    .description {
+        padding-left: calc(var(--base-unit) * 5);
+    }
+}
+
+/* @media (min-width: 45rem) {
+    .skills .chart .skill{
+        min-width: 25%;
+    }
+} */
