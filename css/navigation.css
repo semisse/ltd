@@ -1,0 +1,144 @@
+/* Navigation */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    padding: calc(var(--base-unit) * 2) 0;
+    margin-bottom: calc(var(--base-unit) * 5);
+}
+
+.logo {
+    z-index: 200;
+}
+
+.menu {
+    height: calc(var(--base-unit) * 5);
+    width: calc(var(--base-unit) * 5);
+}
+
+.menu input {
+    height: calc(var(--base-unit) * 5);
+    width: calc(var(--base-unit) * 5);
+    display: block;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 1000;
+    position: absolute;
+}
+
+.menu input:checked~.burger {
+    display: none;
+}
+
+.menu input:checked~.navigation, .menu input:checked~.close {
+    display: block;
+    transform: translate(0, 0);
+    transition: transform 1s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+.burger {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.burger a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.burger a>span {
+    height: 1px;
+    width: calc(var(--base-unit) * 4);
+    display: block;
+    background-color: var(--nazare);
+    margin-bottom: var(--base-unit);
+    float: right;
+}
+
+.burger a>span:last-child {
+    width: calc(var(--base-unit) * 2);
+    margin-bottom: 0;
+}
+
+.close {
+    height: 100%;
+    width: 100%;
+    display: none;
+    z-index: 200;
+    position: relative;
+}
+
+.close a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.close a>span {
+    height: 1px;
+    width: 100%;
+    display: block;
+    background-color: var(--black);
+    transform: rotate(45deg);
+}
+
+.close a>span:last-child {
+    transform: rotate(-45deg);
+}
+
+.navigation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--white);
+    z-index: 100;
+    display: none;
+    text-align: right;
+    padding-top: calc(var(--base-unit) * 10);
+    transform: translate(-100%, 0);
+    transition: all 1s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+.navigation li {
+    font-size: 4em;
+    font-style: italic;
+    color: var(--black);
+    list-style: none;
+}
+
+.navigation li.active::before {
+    color: var(--nazare);
+}
+
+.navigation li.active a {
+    color: var(--nazare);
+}
+
+.navigation li a {
+    color: var(--black);
+}
+
+.social {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social>span {
+    padding: var(--base-unit);
+}
+
+.social img {
+    transition: filter .2s;
+}
+
+.social img:hover {
+    filter: invert(0.5)
+}
