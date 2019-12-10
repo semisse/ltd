@@ -29,6 +29,13 @@
 .project p {
     color: var(--white);
 }
+.project span {
+    font-size: .75rem;
+    color: var(--salmon);
+    padding: var(--base-unit) calc(var(--base-unit) * 2);
+    border: 1px solid var(--salmon);
+    border-radius: calc(var(--base-unit) * 5);
+}
 
 @media (min-width: 40rem) {
 
