@@ -58,14 +58,13 @@
         display: flex;
         flex-wrap: wrap;
     }
-
-    .skills .chart .skill{
+    .skills .chart .skill {
         min-width: 50%;
     }
 }
 
 @media (min-width: 45rem) {
-    .skills .chart .skill{
+    .skills .chart .skill {
         min-width: 25%;
     }
 }

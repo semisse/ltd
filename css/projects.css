@@ -29,6 +29,7 @@
 .project p {
     color: var(--white);
 }
+
 .project .description ul {
     padding: 0
 }
@@ -44,15 +45,12 @@
 }
 
 @media (min-width: 40rem) {
-
     .project {
         display: flex;
     }
-
     .image, .description {
         flex: 50%
     }
-
     .description {
         padding-left: calc(var(--base-unit) * 5);
     }

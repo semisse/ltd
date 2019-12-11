@@ -1,4 +1,5 @@
 /* Navigation */
+
 .topbar {
     display: flex;
     justify-content: space-between;
@@ -48,12 +49,12 @@
     background-color: var(--white);
     text-align: right;
     transform: translateY(-200%);
-    transition: transform .4s cubic-bezier(0.77,0.2,0.05,1.0);
+    transition: transform .4s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
 
 .open {
     transform: translateY(0%);
-    transition: transform .4s cubic-bezier(0.77,0.2,0.05,1.0);
+    transition: transform .4s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
 
 .navigation ul {
@@ -118,7 +119,6 @@
 }
 
 @media (min-width: 40rem) {
-
     .navigation li {
         font-size: 500%;
         text-align: center;
@@ -130,7 +130,6 @@
     .social {
         justify-content: center;
     }
-
     .navigation p {
         text-align: center;
     }
