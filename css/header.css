@@ -1,9 +1,14 @@
 /* Header */
 
+h1 {
+    overflow: hidden;
+}
+
 .header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 0;
 }
 
 .header .welcome {
@@ -16,10 +21,6 @@
     margin-top: calc(var(--base-unit) * (-5));
     max-width: 80%;
     transition: transform .2s ease-in-out;
-}
-
-.header img:hover {
-    transform: perspective(700px) rotateY(20deg);;
 }
 
 .header .card {
@@ -56,11 +57,9 @@
     .header .welcome {
         flex-direction: row;
     }
-
     .header img {
         max-width: 60%;
     }
-
     .card {
         max-width: calc(var(--base-unit) * 50);
     }
@@ -76,7 +75,6 @@
     h1 {
         font-size: 1000%;
     }
-
     .header img {
         margin-top: calc(var(--base-unit) * (-5));
     }
