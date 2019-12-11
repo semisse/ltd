@@ -21,6 +21,8 @@
 
 .skills .chart .skill {
     margin: calc(var(--base-unit) * 2) 0;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .skills .chart .skill .circle {

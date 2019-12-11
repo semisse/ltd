@@ -29,9 +29,15 @@
 .project p {
     color: var(--white);
 }
-.project span {
+.project .description ul {
+    padding: 0
+}
+
+.project .description li {
+    display: inline-block;
     font-size: .75rem;
     color: var(--salmon);
+    margin: calc(var(--base-unit) / 2) 0;
     padding: var(--base-unit) calc(var(--base-unit) * 2);
     border: 1px solid var(--salmon);
     border-radius: calc(var(--base-unit) * 5);
@@ -51,9 +57,3 @@
         padding-left: calc(var(--base-unit) * 5);
     }
 }
-
-/* @media (min-width: 45rem) {
-    .skills .chart .skill{
-        min-width: 25%;
-    }
-} */

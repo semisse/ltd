@@ -32,11 +32,11 @@
 </head>
 
 <body>
-    <div class="wrapper" role="main">
+    <div class="wrapper">
         <div class="topbar">
             <div class="logo">
                 <a href="/">
-                    <img src="img/logo.svg" alt="assinatura de samuel fialho">
+                    <img src="img/logo.svg" alt="samuel fialho signature">
                 </a>
             </div>
             <div class="menu">
@@ -52,7 +52,7 @@
                                 <span aria-hidden="true"></span>
                             </a>
                         </div>
-                        <nav>
+                        <nav role="navigation">
                             <ul>
                                 <li class="menu-item"><a href="#">Home</a></li>
                                 <li class="menu-item"><a href="#">Projects</a></li>
@@ -83,7 +83,7 @@
             </div>
         </div>
 
-        <section class="header" id="home">
+        <section class="header" id="home" role="main">
             <div class="welcome">
                 <h1>design & develop through stories</h1>
                 <img src="img/sam.png" srcset="img/sam.png 1x, img/sam@2x.png 2x" alt="picture of samuel">
@@ -112,10 +112,12 @@
                         incredible character and spirit. That was exactly the essence of the project: to look for a
                         common symbol that could represent every citizen and to modernize the look of the town.
                     </p>
-                    <span>Creative Direction</span>
-                    <span>UX Research</span>
-                    <span>UI Design</span>
-                    <span>Frontend Development</span>
+                    <ul aria-label="roles played during this project">
+                        <li>Creative Direction</li>
+                        <li>UX Research</li>
+                        <li>UI Design</li>
+                        <li>Frontend Development</li>
+                    </ul>
                 </div>
             </div>
 
@@ -125,7 +127,7 @@
                         alt="CIBV iOS version UI Design">
                 </div>
                 <div class="description">
-                    <h3>Telling an engaging and complex history event</h3>
+                    <h3>How to engage with a complex history event</h3>
                     <p>French invasions in Portugal were an important fact. CIBV is a museum that aims not only to tell
                         all the historical aspects of it, but also to explore new explanations for what happened
                         specifically in Vimeiro. To add an extra layer of interactivity to the physical structure, we've
@@ -133,12 +135,16 @@
                         approach, involving, from the very beginning, four groups of people, segmented to represent our
                         future users. The app was developed to iOS and Android.
                     </p>
-                    <span>Creative Direction</span>
-                    <span>UX Research</span>
-                    <span>UI Design</span>
-                    <span>Backend Development</span>
+
+                    <ul aria-label="roles played during this project">
+                        <li>Creative Direction</li>
+                        <li>UX Research</li>
+                        <li>UI Design</li>
+                        <li>Backend Development</li>
+                    </ul>
                 </div>
             </div>
+
 
             <div class="project">
                 <div class="image">
@@ -155,7 +161,9 @@
                         were printed some key word definitions that were also connected to their on boarding in the
                         company. In each little box, there was an surprise object.
                     </p>
-                    <span>Creative Direction</span>
+                    <ul aria-label="roles played during this project">
+                        <li>Creative Direction</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -165,28 +173,28 @@
             <h3>Welcome to the most honest skill chart you will find on the entire web</h3>
             <div class="chart">
                 <div class="skill">
-                    <div class="circle">
-                        <div class="percentage">1%</div>
-                    </div>
                     <h4>UX&UI</h4>
-                </div>
-                <div class="skill">
                     <div class="circle">
                         <div class="percentage">1%</div>
                     </div>
+                </div>
+                <div class="skill">
                     <h4>HTML</h4>
-                </div>
-                <div class="skill">
                     <div class="circle">
                         <div class="percentage">1%</div>
                     </div>
+                </div>
+                <div class="skill">
                     <h4>CSS</h4>
-                </div>
-                <div class="skill">
                     <div class="circle">
                         <div class="percentage">1%</div>
                     </div>
+                </div>
+                <div class="skill">
                     <h4>Javascript</h4>
+                    <div class="circle">
+                        <div class="percentage">1%</div>
+                    </div>
                 </div>
             </div>
             <div class="card">
