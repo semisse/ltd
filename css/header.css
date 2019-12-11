@@ -1,14 +1,15 @@
 /* Header */
 
-h1 {
-    overflow: hidden;
-}
-
 .header {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 0;
+}
+
+.header h1 {
+    flex-grow: 2;
+    flex-basis: 0;
 }
 
 .header .welcome {
@@ -19,8 +20,8 @@ h1 {
 
 .header img {
     margin-top: calc(var(--base-unit) * (-5));
-    max-width: 80%;
-    transition: transform .2s ease-in-out;
+    flex-grow: 0;
+    flex-basis: .2;
 }
 
 .header .card {
@@ -52,13 +53,10 @@ h1 {
 
 @media (min-width: 40rem) {
     h1 {
-        font-size: 500%;
+        font-size: 400%;
     }
     .header .welcome {
         flex-direction: row;
-    }
-    .header img {
-        max-width: 60%;
     }
     .card {
         max-width: calc(var(--base-unit) * 50);
